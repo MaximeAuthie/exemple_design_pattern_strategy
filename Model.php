@@ -7,7 +7,7 @@
         private ?Vol $comportementVol; //On définit un attribut de type Vol(l'interface)
         private ?Cancan $comportementCancan; //On définit un attribut de type Cancan(l'interface)
 
-        public function __construct($cv,$cc) { //On créé un construction dans lequel on va passer en paramètre les classes qui implémente les interfaces
+        public function __construct($cv,$cc) { //On créé un construction dans lequel on va passer en paramètre des instances des classes qui implémente les interfaces
             $this->comportementVol = $cv; //On ajoute une méthode implémentant l'interface Vol dans l'attribut comportementVol
             $this->comportementCancan = $cc; //On ajoute une méthode implémentant l'interface Cancan dans l'attribut comportementCancan
         }
